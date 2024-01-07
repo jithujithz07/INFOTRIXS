@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>result for {{context.quote_author}}</title>
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.png' %}" >
+    <link rel="stylesheet" href="{% static '/css/style.css' %}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Long+Cang&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="searchbar">
+        <h1>Quotes from {{context.quote_author}}</h1>
+    </div>
+    <div class="Box">
+        <div class="Quotes_box">
+            {% if nores %}
+            <h1>“{{nores}}”</h1>
+            <p>
+                Try with some author names....
+            </p>
+            <button onclick="window.location.href = '{% url 'home' %}';">go back</button>
+            {% endif %}
+            {% if context %}<h1>“{{context.quote_content}}”</h1>
+           
+            <p>―{{context.quote_author}}</p>
+            {% endif %}
+            
+
+        </div>
+</body>
+</html>

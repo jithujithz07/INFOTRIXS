@@ -1,0 +1,98 @@
+body{
+
+background-image: url("https://trumpwallpapers.com/wp-content/uploads/Colorful-Wallpaper-22-3000x2000-1-scaled.jpg");
+background-repeat: no-repeat;
+overflow-x: hidden;
+}
+.searchbar{
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    position: fixed;
+    z-index: 99;
+    
+
+}
+.searchbar  h1{
+    color: white;
+    font-family: 'Long Cang', cursive;
+    font-size: 50px;
+    font-weight: bold;
+}
+.Box{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding-top: 10%;
+    padding-bottom: 20% ;
+    margin: 0 auto;
+    
+
+}
+.love{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    bottom: 0;
+    color: aliceblue;
+    font-family: 'Long Cang', cursive;
+    font-size: 20px;
+    margin:0;
+}
+.Quotes_box{
+    color: aliceblue;
+    width: 30%;
+    padding: 10%;
+    background-color:rgba(252, 255, 252, 0.062);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    text-wrap:balance;
+
+}
+#Auth_search{
+    width: 19%;
+    background-color:rgba(252, 255, 252, 0.062);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 25px;
+    transition: 0.5s ease-in-out;
+    text-align: center;
+    color: aliceblue;
+    outline: none;
+    
+}
+#Auth_search:hover{
+    width: 20%;
+    transition: 0.5s ease-in-out;
+}
+#Auth_help{
+    color: white;
+    padding-right: 5%;
+    font-size: larger;
+    padding-top:1%;
+    font-family: 'Long Cang', cursive;
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+#Search_btn{
+    margin-left: 2%;
+    border: 2px solid rgb(255, 0, 255);
+    border-radius: 1px 20px 20px 1px;
+    background: none;
+    padding: 0.5%;
+    transition: 0.5s ease-in-out;
+    
+}
+#Search_btn:hover{
+    border-radius: 20px 1px 1px 20px;
+    transition: 0.5s ease-in-out;
+}
+::placeholder {
+    text-align: center;
+     
+    
+    }
